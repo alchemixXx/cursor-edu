@@ -59,14 +59,14 @@ def multiple_ints(first_value: int, second_value: int) -> int:
 def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
     """
     If possible to convert arguments to int value - convert and multiply them.
-    If it is impossible raise OurAwesomeException
+    If it is impossible raise ValueEror
 
     Args:
         first_value: number for multiply
         second_value: number for multiply
 
     Raises:
-        OurAwesomeException
+        ValueError
 
     Returns: multiple of two numbers.
 
@@ -83,11 +83,13 @@ def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
             print("Not valid input data")
         >>> "Not valid input data"
     """
-    try:
-        return int(first_value) * int(second_value)
-    except OurAwesomeException:
-    # except ValueError:
-        print("Not valid input data")
+
+    return int(first_value) * int(second_value)
+    # if type(int(first_value)) == int and type(int(second_value)) == int:
+    #     return int(first_value) * int(second_value)
+    # else:
+    #     raise ValueError
+
 
 
 def is_word_in_text(word: str, text: str) -> bool:
