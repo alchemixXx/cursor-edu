@@ -1,0 +1,31 @@
+al@al-VB:~/Cursor/venvs$ source py_2/bin/activate
+(py_2) al@al-VB:~/Cursor/venvs$ python
+Python 2.7.15rc1 (default, Nov 12 2018, 14:31:15) 
+[GCC 7.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "Hello, world"
+Hello, world
+al@al-VB:~/Cursor/venvs$ source py_3/bin/activate
+(py_3) al@al-VB:~/Cursor/venvs$ python
+Python 3.7.3 (default, Mar 26 2019, 00:55:50) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "Hello, wrold"
+  File "<stdin>", line 1
+    print "Hello, wrold"
+                       ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello, wrold")?
+>>> 
+
+al@al-VB:~/Cursor/venvs$ source py_3/bin/activate
+(py_3) al@al-VB:~/Cursor/venvs$ python
+Python 3.7.3 (default, Mar 26 2019, 00:55:50) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "Hello, wrold"
+  File "<stdin>", line 1
+    print "Hello, wrold"
+                       ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello, wrold")?
+>>> 
+
