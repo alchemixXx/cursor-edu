@@ -108,11 +108,16 @@ def is_word_in_text(word: str, text: str) -> bool:
         >>> False
 
     """
-    words = text.split()
-    for example in words:
-        if word == example:
-            return True
-    return False
+    # Solution 1
+    # words = text.split()
+    # for example in words:
+    #     if word == example:
+    #         return True
+    # return False
+
+    # Solution 2
+    return word in text
+
 
 
 def some_loop_exercise() -> list:
@@ -150,10 +155,16 @@ def alphabet() -> dict:
         alphabet()
         >>> {"a": 1, "b": 2 ...}
     """
-    new_dict = {}
-    for numb in range(97, 123):
-        new_dict.update({(numb - 96): chr(numb)})
-    return new_dict
+    # Solution 1
+
+    # new_dict = {}
+    # for numb in range(97, 123):
+    #     new_dict.update({(numb - 96): chr(numb)})
+    # return new_dict
+
+    # Solution 2
+    import string
+    return {key: value for key, value in enumerate(string.ascii_lowercase, 1)}
 
 
 def simple_sort(data: List[int]) -> List[list]:
