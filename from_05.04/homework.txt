@@ -1,0 +1,51 @@
+Install Python3.7, verify that PIP is installed together with Python. Install virtualenv.
+Check their versions to be sure that they are installed correctly by using:
+
+
+
+python3.7 --version
+
+output example: 
+
+Python 3.7.3
+
+
+pip --version
+
+output example: 
+
+pip 18.0 from /usr/local/lib/python3.7/dist-packages/pip (python 3.7)
+
+
+virtualenv --version
+
+output example: 
+
+16.0.0
+
+
+Task 2.
+Create two virtual environments using virtualenv.
+
+The first venv should be for Python2,  the second one for Python3.
+
+Activate the first venv, run python interpreter and submit a following command:
+>>> print "Hello World"
+Expected result:
+
+Hello World
+2. Activate the second venv, run python interpreter and submit a following command:
+
+print "Hello World"
+Expected result:
+
+>>> print "Hello World" 
+ File "<stdin>", line 1
+  print "Hello World"
+        ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello World")?
+
+Task 3.
+Set up another virtual environment. Install this list of packages: django, flask, sphinx.
+
+Store all project requirements to the file. Delete these packages manually from terminal and then install again from the file.

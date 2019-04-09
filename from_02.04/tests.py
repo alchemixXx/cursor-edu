@@ -1,6 +1,6 @@
 import unittest
 import random
-
+# from Nikolay_Mizman import (
 from homework import (
     is_two_object_has_same_value,
     is_two_objects_has_same_type,

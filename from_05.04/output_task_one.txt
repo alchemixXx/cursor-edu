@@ -1,0 +1,10 @@
+al@al-VB:/media/sf_05_Cursor/homework/from_05.04$ python3.7 --version
+Python 3.7.3
+
+al@al-VB:~$ pip --version
+pip 19.0.3 from /home/al/.local/lib/python3.6/site-packages/pip (python 3.6)
+
+al@al-VB:~$ virtualenv --version
+16.4.3
+
+
