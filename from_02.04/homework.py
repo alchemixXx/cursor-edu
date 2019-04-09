@@ -4,6 +4,7 @@ This is a list of functions that should be completed.
 
 from typing import Any
 from typing import List
+import string
 
 
 class OurAwesomeException(Exception):
@@ -163,7 +164,6 @@ def alphabet() -> dict:
     # return new_dict
 
     # Solution 2
-    import string
     return {key: value for key, value in enumerate(string.ascii_lowercase, 1)}
 
 
